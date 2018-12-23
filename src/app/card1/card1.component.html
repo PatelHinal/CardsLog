@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+     
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+     
+    <div class="container">
+
+    <div class="card1" style="width:530px; height:530px; box-shadow: 3px 3px; border: 2px groove; background-color: lightgrey;">
+      <div class="card-body">
+          <div id="search">
+              <input type="text" 
+                ng-model="ID"  placeholder="search for..." (onkeyup)="getSuccessData()"/> 
+          </div>
+          <h5 id="title">K i t s u</h5>
+          <br/>
+          <div class="fetchdata">
+            <span>ID: {{kid}}</span><br/><br/>
+            <span id="type">Text: {{ktype}}</span><br/> <br/>
+            <span> Link: {{klink}}</span><br/> <br/>
+            <span id="abbre"> Abbreviated Titles: {{kabbreviate}}</span><br/> <br/>
+            <span> Average Rating: {{kagerating}}</span><br/> <br/>
+            <span id="cimage">  <img src= "{{kcoverimage}}"  style="padding-bottom:100px; margin-bottom:100px; margin-right: auto; width:200px; height:200px; float:right; display: block;"></span>
+            <span id="coff"> Cover Image Offset: {{kimgoffset}}</span><br/> <br/>
+            <span> Dimension:{{kcdim}}</span>
+            
+          
+          </div>
+          
+</div>
+</div>
+</div>
+</body>
+</html>

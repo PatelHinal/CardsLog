@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<div>
+  <h2 style="align-content: center;"> News Update</h2>
+  <div><a routerLink="/">Home</a>  </div>
+  <div> <a routerLink="/card1">Card1</a> 
+   <div (onCard1Data)="getCard1($event)" ></div>
+  </div>
+  <!--Card2-->
+  <div><a routerLink="/card2">Card2</a> 
+    <div (onCard2Data)="getCard2($event)" ></div>
+</div>
+</div>
+
+
+
+<div>
+ <router-outlet></router-outlet>
+</div>
